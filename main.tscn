@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxsb488o6xhax"]
+
+[ext_resource type="PackedScene" uid="uid://d3igmn05xq3ar" path="res://Player.tscn" id="1_bd866"]
+[ext_resource type="Script" path="res://Main.cs" id="1_stbei"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_stbei")
+
+[node name="Player" parent="." instance=ExtResource("1_bd866")]
+
+[connection signal="Shoot" from="Player" to="." method="OnPlayerShoot"]

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cu0qprvgy3080"]
+
+[ext_resource type="Script" path="res://Bullet.cs" id="1_v7mrh"]
+[ext_resource type="Texture2D" uid="uid://bsckxfqtcvrgr" path="res://art/topdownshooter/PNG/weapon_gun.png" id="2_b6sur"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pet8e"]
+height = 20.0
+
+[node name="Bullet" type="Area2D"]
+script = ExtResource("1_v7mrh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_b6sur")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("CapsuleShape2D_pet8e")
