@@ -541,6 +541,7 @@ script = ExtResource("1_stbei")
 
 [node name="Player" parent="." instance=ExtResource("1_bd866")]
 z_index = 10
+position = Vector2(328, 217)
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(585, 312)
